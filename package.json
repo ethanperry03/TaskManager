@@ -4,17 +4,32 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "build": "tsc --build",
+    "test": "node ./dist/index.js",
+    "start": "nodemon ./src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.11.10"
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
-  }
+    "@types/express": "^5.0.0",
+    "@types/mongoose": "^5.11.96",
+    "mongodb": "^6.13.0",
+    "mongoose": "^8.10.1",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanperry03/TaskManager.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ethanperry03/TaskManager/issues"
+  },
+  "homepage": "https://github.com/ethanperry03/TaskManager#readme"
 }
